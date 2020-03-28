@@ -1,6 +1,8 @@
 # cbor-tag-text-key-map
 
-This document proposes a CBOR tag for maps having text-only keys. **Request is pending; the proposed tag value has not yet been allocated**.
+This document proposes a CBOR tag for maps having text-only keys.
+
+**Status**: **Request pending**.
 
 **Proposed tag value**: 275
 
