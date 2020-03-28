@@ -1,10 +1,8 @@
 # cbor-tag-text-key-map
 
-This document proposes a CBOR tag for maps having text-only keys.
+This document describes a CBOR tag for maps having text-only keys.
 
-**Status**: **Request pending**.
-
-**Proposed tag value**: 275
+**Tag value**: 275
 
 **Data item**: Map (major type 5)
 
@@ -18,4 +16,4 @@ When the input map contains only text keys, it may be preferrable to output a JS
 
 The problem with this approach is that a stream-based CBOR-to-JSON converter cannot determine a priori if the input CBOR map contains only text keys. Once it has begun encoding an output Object, it cannot change the output representation once it encounters a non-text key in the input CBOR map.
 
-With the proposed tag, it would be possible for a stream-based CBOR-to-JSON converter to determine a priori if an input CBOR map contains only text keys, and thus encode it directly to a JSON Object without having to first process the entire input map.
+With this tag, it's possible for a stream-based CBOR-to-JSON converter to determine a priori if an input CBOR map contains only text keys, and thus encode it directly to a JSON Object without having to first process the entire input map.
